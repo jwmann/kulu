@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <scenes>
@@ -99,7 +100,7 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="lsI-lx-rUQ" kind="relationship" relationship="window.shadowedContentViewController" id="hf9-m3-T4O"/>
+                        <segue destination="eX8-9W-8Yb" kind="relationship" relationship="window.shadowedContentViewController" id="S1V-Ys-Y2j"/>
                     </connections>
                 </windowController>
                 <customObject id="rgO-C5-Czw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -107,37 +108,65 @@
             <point key="canvasLocation" x="62" y="166"/>
         </scene>
         <!--Tab View Controller-->
-        <scene sceneID="5ir-jp-5yI">
+        <scene sceneID="gq8-k6-Uy4">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="lsI-lx-rUQ" sceneMemberID="viewController">
-                    <tabViewItems>
-                        <tabViewItem label="Shortcuts" id="t0q-O3-7G8"/>
-                        <tabViewItem label="System Settings" id="a3F-Tg-T9s"/>
-                    </tabViewItems>
-                    <tabView key="tabView" type="noTabsNoBorder" id="B9b-jX-Do0">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="system"/>
-                        <tabViewItems/>
-                    </tabView>
+                <viewController id="eX8-9W-8Yb" customClass="TabViewController" customModule="Kawa" customModuleProvider="target" sceneMemberID="viewController">
+                    <customView key="view" id="wmx-KI-TbI" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <tabView fixedFrame="YES" type="noTabsNoBorder" initialItem="knZ-Nd-lDu" translatesAutoresizingMaskIntoConstraints="NO" id="2Tl-AD-Dev" userLabel="Tab View">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="275"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Shortcuts" identifier="Shortcuts" id="knZ-Nd-lDu">
+                                        <view key="view" id="xfp-dd-cyy">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="275"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="System Settings" identifier="SystemSettings" id="pnh-m4-Ny5">
+                                        <view key="view" id="iR2-rx-QUm">
+                                            <rect key="frame" x="0.0" y="0.0" width="458" height="276"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                            <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yv-th-r7u">
+                                <rect key="frame" x="107" y="277" width="237" height="20"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="roundRect" trackingMode="selectOne" id="x3D-26-xQY">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <segments>
+                                        <segment label="Shortcuts" width="115" selected="YES"/>
+                                        <segment label="System Settings" width="115" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="tabControlSelected:" target="eX8-9W-8Yb" id="umB-F6-JxK"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                    </customView>
                     <connections>
-                        <segue destination="WK9-v7-Mix" kind="relationship" relationship="tabItems" id="FMn-AA-T9j"/>
-                        <segue destination="8tD-vA-uhk" kind="relationship" relationship="tabItems" id="cIb-Vc-1BU"/>
+                        <outlet property="tabControl" destination="1yv-th-r7u" id="cuB-mf-D6t"/>
+                        <outlet property="tabView" destination="2Tl-AD-Dev" id="Oow-l1-q4V"/>
                     </connections>
-                </tabViewController>
-                <customObject id="raC-uG-Dj5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <customObject id="fNh-09-EPC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.5" y="705"/>
+            <point key="canvasLocation" x="-116" y="723"/>
         </scene>
         <!--System Setting View Controller-->
         <scene sceneID="rYs-if-gnG">
             <objects>
-                <viewController id="8tD-vA-uhk" customClass="SystemSettingViewController" customModule="Kawa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SystemSettingViewController" id="8tD-vA-uhk" customClass="SystemSettingViewController" customModule="Kawa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" id="hjE-TV-MvY">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="299"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="275"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <box autoresizesSubviews="NO" fixedFrame="YES" title="General Stuff" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="Krr-XJ-miL">
-                                <rect key="frame" x="17" y="186" width="416" height="113"/>
+                                <rect key="frame" x="17" y="162" width="416" height="113"/>
                                 <view key="contentView">
                                     <rect key="frame" x="1" y="1" width="414" height="97"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,14 +199,14 @@
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </box>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13u-Dv-ipW">
-                                <rect key="frame" x="20" y="15" width="102" height="25"/>
+                                <rect key="frame" x="20" y="6" width="102" height="25"/>
                                 <buttonCell key="cell" type="roundTextured" title="Quit Kawa" bezelStyle="texturedRounded" alignment="center" borderStyle="border" inset="2" id="sIC-mE-B6u">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <box autoresizesSubviews="NO" fixedFrame="YES" title="Shortcut" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-nj-dkh">
-                                <rect key="frame" x="17" y="58" width="416" height="124"/>
+                                <rect key="frame" x="17" y="34" width="416" height="124"/>
                                 <view key="contentView">
                                     <rect key="frame" x="1" y="1" width="414" height="108"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +233,7 @@
                                 <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yD8-rS-xQC" customClass="HyperlinkTextField" customModule="Kawa" customModuleProvider="target">
-                                <rect key="frame" x="130" y="20" width="172" height="17"/>
+                                <rect key="frame" x="130" y="11" width="172" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="github.com/noraesae/kawa" placeholderString="" id="78n-cW-Oy5">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -228,9 +257,9 @@
         <!--Shortcut View Controller-->
         <scene sceneID="lOC-jq-WBP">
             <objects>
-                <viewController id="WK9-v7-Mix" customClass="ShortcutViewController" customModule="Kawa" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="jSm-gI-Qdt">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                <viewController storyboardIdentifier="ShortcutViewController" id="WK9-v7-Mix" customClass="ShortcutViewController" customModule="Kawa" customModuleProvider="target" sceneMemberID="viewController">
+                    <scrollView key="view" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" borderType="none" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="jSm-gI-Qdt">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="275"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <clipView key="contentView" id="Z8E-xv-KLv">
                             <rect key="frame" x="1" y="17" width="238" height="117"/>
@@ -257,7 +286,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="KeyboardCellView" id="u9z-HM-IIS">
-                                                    <rect key="frame" x="1" y="1" width="187" height="20"/>
+                                                    <rect key="frame" x="1" y="1" width="187.5" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZuG-vA-wNH">
@@ -280,7 +309,7 @@
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
-                                        <tableColumn identifier="Shortcut" width="254.5" minWidth="40" maxWidth="1000" id="5Ck-kV-jeJ">
+                                        <tableColumn identifier="Shortcut" width="256.5" minWidth="40" maxWidth="1000" id="5Ck-kV-jeJ">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Shortcut">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -294,7 +323,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="ShortcutCellView" id="Rmx-MO-swj" customClass="ShortcutCellView" customModule="Kawa" customModuleProvider="target">
-                                                    <rect key="frame" x="191.5" y="1" width="254" height="20"/>
+                                                    <rect key="frame" x="191.5" y="1" width="256.5" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I1q-7B-J5s" customClass="MASShortcutView">

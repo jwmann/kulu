@@ -12,6 +12,7 @@
 		CC4065BE1B6D334B000E1E87 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4065BD1B6D334B000E1E87 /* Settings.swift */; };
 		CC4065C01B6DD9C3000E1E87 /* LaunchOnStartup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4065BF1B6DD9C3000E1E87 /* LaunchOnStartup.swift */; };
 		CC4181681B6CB3CB007DA794 /* SystemSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4181671B6CB3CB007DA794 /* SystemSettingViewController.swift */; };
+		CC5659091B737FC2006E45AE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5659081B737FC2006E45AE /* TabViewController.swift */; };
 		CC69E0761B663E1E00A92F58 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69E0751B663E1E00A92F58 /* PreferenceWindowController.swift */; };
 		CC69E0781B66415300A92F58 /* ShortcutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69E0771B66415300A92F58 /* ShortcutViewController.swift */; };
 		CC69E07A1B6646B200A92F58 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69E0791B6646B200A92F58 /* StatusBar.swift */; };
@@ -56,6 +57,7 @@
 		CC4065BD1B6D334B000E1E87 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		CC4065BF1B6DD9C3000E1E87 /* LaunchOnStartup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchOnStartup.swift; sourceTree = "<group>"; };
 		CC4181671B6CB3CB007DA794 /* SystemSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemSettingViewController.swift; sourceTree = "<group>"; };
+		CC5659081B737FC2006E45AE /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		CC69E0751B663E1E00A92F58 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		CC69E0771B66415300A92F58 /* ShortcutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutViewController.swift; sourceTree = "<group>"; };
 		CC69E0791B6646B200A92F58 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				CC1FEF6E1B685FD3005E9BC8 /* ShortcutCellView.swift */,
 				CC69E0791B6646B200A92F58 /* StatusBar.swift */,
 				CC4181671B6CB3CB007DA794 /* SystemSettingViewController.swift */,
+				CC5659081B737FC2006E45AE /* TabViewController.swift */,
 				CC6D8ED11B654099005682C0 /* Images.xcassets */,
 				CC6D8ED31B654099005682C0 /* Main.storyboard */,
 				CC1FEF6D1B685E9A005E9BC8 /* BridgingHeader.h */,
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5659091B737FC2006E45AE /* TabViewController.swift in Sources */,
 				CC1FEF6F1B685FD3005E9BC8 /* ShortcutCellView.swift in Sources */,
 				CC69E07C1B665A5C00A92F58 /* ShortcutTableView.swift in Sources */,
 				CC4181681B6CB3CB007DA794 /* SystemSettingViewController.swift in Sources */,
@@ -392,6 +396,7 @@
 				);
 				INFOPLIST_FILE = kawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = Kawa;
 				SWIFT_OBJC_BRIDGING_HEADER = kawa/BridgingHeader.h;
 			};
@@ -408,6 +413,7 @@
 				);
 				INFOPLIST_FILE = kawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = Kawa;
 				SWIFT_OBJC_BRIDGING_HEADER = kawa/BridgingHeader.h;
 			};
