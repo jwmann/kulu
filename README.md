@@ -2,15 +2,14 @@
 
 # Kulu [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/jwmann/kulu/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/jwmann/kulu.svg)](https://github.com/jwmann/kulu/releases) [![travis-ci](https://travis-ci.org/jwmann/kulu.svg)](https://travis-ci.org/jwmann/kulu)
 
-###### A better input source switcher for OS X
+###### A better audio output switcher for OS X
 
 ## TL;DR
-Kulu helps users to switch between audio output sources by user-defined
-shortcuts.
+Kulu helps users to switch between audio outputs by user-defined shortcuts.
 
 ## A little background
 
-I use 2 audio output sources on my Mac, my speakers, and my headphones. When
+I use 2 audio outputs on my Mac, my speakers, and my headphones. When
 I'd receive a Skype call or the situation didn't allow loud noises, I
 would need to quickly switch my audio output to my headphones and then back
 to my speakers after the call was over.
