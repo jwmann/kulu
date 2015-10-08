@@ -1,33 +1,33 @@
 ![logo](resource/png/logo.png)
 
-# Kulu [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/noraesae/kulu/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/noraesae/kulu.svg)](https://github.com/noraesae/kulu/releases) [![travis-ci](https://travis-ci.org/noraesae/kulu.svg)](https://travis-ci.org/noraesae/kulu)
+# Kulu [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/jwmann/kulu/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/jwmann/kulu.svg)](https://github.com/jwmann/kulu/releases) [![travis-ci](https://travis-ci.org/jwmann/kulu.svg)](https://travis-ci.org/jwmann/kulu)
 
 ###### A better input source switcher for OS X
 
 ## TL;DR
-Kulu helps users to switch between keyboard input sources by user-defined
+Kulu helps users to switch between audio output sources by user-defined
 shortcuts.
 
 ## A little background
 
-I use 3 input sources in my Mac, `U.S.`, `2-Set Korean` and `Hiragana`. When
-I used to use only 2 sources, it was just fine. I needed to just stroke `Command+Space`
-to switch between them. However, when the other was added, it became a mess.
+I use 2 audio output sources on my Mac, my speakers, and my headphones. When
+I'd receive a Skype call or the situation didn't allow loud noises, I
+would need to quickly switch my audio output to my headphones and then back
+to my speakers after the call was over.
 
-In order to switch an input source to another, `Command+Space` should be
-stroked several times. It's mainly because it switches a source to a
-previously-selected source, and usually we don't always remember what it was.
-There's another built-in shortcut, `Alt+Command+Space`, which switch the input
-to a next language in system order. However, the order should be memorised to
-avoid always checking which language is current. Although we've memorised the
-order perfectly, we need to stroke the keys more than twice if the sources
-are not adjecent. In short, it's a hell.
+Initially I was using the [SoundSource](https://rogueamoeba.com/legacy/) app made by [RogueAmoeba](https://rogueamoeba.com/)
+to switch the output from a drop down menu in the top bar.
+Eventually, that became quite tedious to constantly grab my mouse, find the icon amidst all the others, click, find the output I want and then click again.
 
-I'd always thought I needed an app like Kulu before I accidently became into
-Swift and decided to implement this by myself. I hope others can be helped
-by Kulu and escape from the input switching hell.
+I decided to create an Applescript to handle this task. Essentially the Applescript was bound to a workflow, which was bound to a keybinding.
+This allowed me to press `Cmd + F12` to toggle between audio outputs. The only drawback was that the code executed slugglishly, sometimes taking up to 5 seconds to switch.
+It also had trouble detecting the key binding for some reason.
 
-Cheers!
+After a few months using the Applescript method, I discovered an app called [Kawa](https://github.com/noraesae/kawa). 
+You should check it out if you haven't but essentially this is an open-source app that allows you to switch your keyboard inputs via keyboard bindings.
+I found this concept so similar to my output issue, with a proper native app framework already in place as well a proper testing suite already configured. I felt compelled to fork this project and modify it to work with audio outputs instead of keyboard inputs.
+
+All original code credit to [noraesae](https://github.com/noraesae) and his [Kawa](https://github.com/noraesae/kawa) app.
 
 ## Demo
 
@@ -38,7 +38,7 @@ For better quality, there is a
 
 ## Install
 
-The prebuilt binaries can be found in [Releases](https://github.com/noraesae/kulu/releases).
+The prebuilt binaries can be found in [Releases](https://github.com/jwmann/kulu/releases).
 
 Unzip `Kulu.zip` and move `Kulu.app` to `Applications`.
 
@@ -80,7 +80,7 @@ $ brew install carthage
 To clone the Git repository of Kulu and install dependencies:
 
 ```bash
-$ git clone git@github.com:noraesae/kulu.git
+$ git clone git@github.com:jwmann/kulu.git
 $ carthage bootstrap
 ```
 
@@ -112,7 +112,7 @@ carefully.
 * [Development](#development)
 
 If there's still a problem, please upload it as an issue on
-[Issues](https://github.com/noraesae/kulu/issues).
+[Issues](https://github.com/jwmann/kulu/issues).
 
 ## License
 
