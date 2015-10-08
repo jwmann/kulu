@@ -1,6 +1,6 @@
 //
 //  ShortcutCellView.swift
-//  kawa
+//  kulu
 //
 //  Created by noraesae on 29/07/2015.
 //  Copyright (c) 2015 noraesae. All rights reserved.

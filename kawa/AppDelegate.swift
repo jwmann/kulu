@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  kawa
+//  kulu
 //
 //  Created by noraesae on 27/07/2015.
 //  Copyright (c) 2015 noraesae. All rights reserved.

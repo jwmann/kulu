@@ -1,11 +1,11 @@
 ![logo](resource/png/logo.png)
 
-# Kawa [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/noraesae/kawa/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/noraesae/kawa.svg)](https://github.com/noraesae/kawa/releases) [![travis-ci](https://travis-ci.org/noraesae/kawa.svg)](https://travis-ci.org/noraesae/kawa)
+# Kulu [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/noraesae/kulu/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/noraesae/kulu.svg)](https://github.com/noraesae/kulu/releases) [![travis-ci](https://travis-ci.org/noraesae/kulu.svg)](https://travis-ci.org/noraesae/kulu)
 
 ###### A better input source switcher for OS X
 
 ## TL;DR
-Kawa helps users to switch between keyboard input sources by user-defined
+Kulu helps users to switch between keyboard input sources by user-defined
 shortcuts.
 
 ## A little background
@@ -23,9 +23,9 @@ avoid always checking which language is current. Although we've memorised the
 order perfectly, we need to stroke the keys more than twice if the sources
 are not adjecent. In short, it's a hell.
 
-I'd always thought I needed an app like Kawa before I accidently became into
+I'd always thought I needed an app like Kulu before I accidently became into
 Swift and decided to implement this by myself. I hope others can be helped
-by Kawa and escape from the input switching hell.
+by Kulu and escape from the input switching hell.
 
 Cheers!
 
@@ -38,31 +38,31 @@ For better quality, there is a
 
 ## Install
 
-The prebuilt binaries can be found in [Releases](https://github.com/noraesae/kawa/releases).
+The prebuilt binaries can be found in [Releases](https://github.com/noraesae/kulu/releases).
 
-Unzip `Kawa.zip` and move `Kawa.app` to `Applications`.
+Unzip `Kulu.zip` and move `Kulu.app` to `Applications`.
 
 ## Preferences
 
 Preferences can be found in a preference window. The window can be opened by
-clicking the menubar icon of Kawa or launching Kawa again.
+clicking the menubar icon of Kulu or launching Kulu again.
 
 * General Stuff
   * **`Show Menubar Icon`**  
-    Show the icon of Kawa in the OS X menubar. When you click the icon, a
+    Show the icon of Kulu in the OS X menubar. When you click the icon, a
     preference window will be opened. If this option is unset, the icon will be
-    hidden and the preference window can be opened when launching Kawa again.
-  * **`Launch Kawa on startup`**  
-    Add Kawa to startup items.
+    hidden and the preference window can be opened when launching Kulu again.
+  * **`Launch Kulu on startup`**  
+    Add Kulu to startup items.
 * Shortcut
   * **`Use an advanced method to switch input sources`**  
     There is a known problem when programminly switching between complex input
     sources such as [CJK](https://en.wikipedia.org/wiki/CJK_characters)
     layouts. This option enables a workaround to fix the problem. In other words,
-    if you find no problem using Kawa, please ignore this option. To use this
+    if you find no problem using Kulu, please ignore this option. To use this
     option, the global shortcut of `Select next source in Input menu` should be
     set to `Alt+Command+Space`, which may be set by default. Unless the
-    shortcut is set correctly and Kawa works as intended, you can check if the
+    shortcut is set correctly and Kulu works as intended, you can check if the
     shortcut is set correctly in `System Preferences > Keyboard > Shortcuts >
     Input Sources`.
 
@@ -77,34 +77,34 @@ $ brew update
 $ brew install carthage
 ```
 
-To clone the Git repository of Kawa and install dependencies:
+To clone the Git repository of Kulu and install dependencies:
 
 ```bash
-$ git clone git@github.com:noraesae/kawa.git
+$ git clone git@github.com:noraesae/kulu.git
 $ carthage bootstrap
 ```
 
-To open the Xcode project of Kawa:
+To open the Xcode project of Kulu:
 
 ```
-$ open kawa.xcodeproj
+$ open kulu.xcodeproj
 ```
 
 You can surely open the project from Xcode.
 
-Kawa can be built with the `Product` menu in Xcode as other Xcode projects
+Kulu can be built with the `Product` menu in Xcode as other Xcode projects
 are built. If you prefer using command line, just run the build script.
 
 ```
 $ ./build.sh
 ```
 
-It will build the project and export `Kawa.app` to the project root.
+It will build the project and export `Kulu.app` to the project root.
 
 ## Help!
 
 The application is quite simple and this README contains quite most of it. When
-you have a problem using Kawa, I would recommend reading this README again,
+you have a problem using Kulu, I would recommend reading this README again,
 carefully.
 
 * [Install](#install)
@@ -112,8 +112,8 @@ carefully.
 * [Development](#development)
 
 If there's still a problem, please upload it as an issue on
-[Issues](https://github.com/noraesae/kawa/issues).
+[Issues](https://github.com/noraesae/kulu/issues).
 
 ## License
 
-Kawa is released under the [MIT License](LICENSE).
+Kulu is released under the [MIT License](LICENSE).

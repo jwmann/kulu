@@ -1,6 +1,6 @@
 //
-//  kawaTests.swift
-//  kawaTests
+//  kuluTests.swift
+//  kuluTests
 //
 //  Created by noraesae on 27/07/2015.
 //  Copyright (c) 2015 noraesae. All rights reserved.
@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class kawaTests: XCTestCase {
+class kuluTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -19,7 +19,7 @@
 		CC6D8ECE1B654099005682C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8ECD1B654099005682C0 /* AppDelegate.swift */; };
 		CC6D8ED21B654099005682C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6D8ED11B654099005682C0 /* Images.xcassets */; };
 		CC6D8ED51B654099005682C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6D8ED31B654099005682C0 /* Main.storyboard */; };
-		CC6D8EE11B654099005682C0 /* kawaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8EE01B654099005682C0 /* kawaTests.swift */; };
+		CC6D8EE11B654099005682C0 /* kuluTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8EE01B654099005682C0 /* kuluTests.swift */; };
 		CC6D8EEB1B654143005682C0 /* InputSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D8EEA1B654143005682C0 /* InputSourceManager.swift */; };
 		CC9AAD2B1B71AA5400626F65 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */; };
 		CC9AAD2C1B71AA5400626F65 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -31,7 +31,7 @@
 			containerPortal = CC6D8EC01B654099005682C0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CC6D8EC71B654099005682C0;
-			remoteInfo = kawa;
+			remoteInfo = kulu;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,14 +60,14 @@
 		CC69E0771B66415300A92F58 /* ShortcutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutViewController.swift; sourceTree = "<group>"; };
 		CC69E0791B6646B200A92F58 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 		CC69E07B1B665A5C00A92F58 /* ShortcutTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutTableView.swift; sourceTree = "<group>"; };
-		CC6D8EC81B654099005682C0 /* Kawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6D8EC81B654099005682C0 /* Kulu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kulu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6D8ECC1B654099005682C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC6D8ECD1B654099005682C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6D8ED11B654099005682C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CC6D8ED41B654099005682C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC6D8EDA1B654099005682C0 /* kawaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kawaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6D8EDA1B654099005682C0 /* kuluTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kuluTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6D8EDF1B654099005682C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC6D8EE01B654099005682C0 /* kawaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kawaTests.swift; sourceTree = "<group>"; };
+		CC6D8EE01B654099005682C0 /* kuluTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kuluTests.swift; sourceTree = "<group>"; };
 		CC6D8EEA1B654143005682C0 /* InputSourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSourceManager.swift; sourceTree = "<group>"; };
 		CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,8 +94,8 @@
 		CC6D8EBF1B654099005682C0 = {
 			isa = PBXGroup;
 			children = (
-				CC6D8ECA1B654099005682C0 /* kawa */,
-				CC6D8EDD1B654099005682C0 /* kawaTests */,
+				CC6D8ECA1B654099005682C0 /* kulu */,
+				CC6D8EDD1B654099005682C0 /* kuluTests */,
 				CC6D8EC91B654099005682C0 /* Products */,
 				CC9AAD2A1B71AA5400626F65 /* MASShortcut.framework */,
 			);
@@ -104,13 +104,13 @@
 		CC6D8EC91B654099005682C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC6D8EC81B654099005682C0 /* Kawa.app */,
-				CC6D8EDA1B654099005682C0 /* kawaTests.xctest */,
+				CC6D8EC81B654099005682C0 /* Kulu.app */,
+				CC6D8EDA1B654099005682C0 /* kuluTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC6D8ECA1B654099005682C0 /* kawa */ = {
+		CC6D8ECA1B654099005682C0 /* kulu */ = {
 			isa = PBXGroup;
 			children = (
 				CC6D8ECD1B654099005682C0 /* AppDelegate.swift */,
@@ -129,7 +129,7 @@
 				CC1FEF6D1B685E9A005E9BC8 /* BridgingHeader.h */,
 				CC6D8ECB1B654099005682C0 /* Supporting Files */,
 			);
-			path = kawa;
+			path = kulu;
 			sourceTree = "<group>";
 		};
 		CC6D8ECB1B654099005682C0 /* Supporting Files */ = {
@@ -140,13 +140,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CC6D8EDD1B654099005682C0 /* kawaTests */ = {
+		CC6D8EDD1B654099005682C0 /* kuluTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC6D8EE01B654099005682C0 /* kawaTests.swift */,
+				CC6D8EE01B654099005682C0 /* kuluTests.swift */,
 				CC6D8EDE1B654099005682C0 /* Supporting Files */,
 			);
-			path = kawaTests;
+			path = kuluTests;
 			sourceTree = "<group>";
 		};
 		CC6D8EDE1B654099005682C0 /* Supporting Files */ = {
@@ -160,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC6D8EC71B654099005682C0 /* kawa */ = {
+		CC6D8EC71B654099005682C0 /* kulu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC6D8EE41B654099005682C0 /* Build configuration list for PBXNativeTarget "kawa" */;
+			buildConfigurationList = CC6D8EE41B654099005682C0 /* Build configuration list for PBXNativeTarget "kulu" */;
 			buildPhases = (
 				CC6D8EC41B654099005682C0 /* Sources */,
 				CC6D8EC51B654099005682C0 /* Frameworks */,
@@ -173,14 +173,14 @@
 			);
 			dependencies = (
 			);
-			name = kawa;
-			productName = kawa;
-			productReference = CC6D8EC81B654099005682C0 /* Kawa.app */;
+			name = kulu;
+			productName = kulu;
+			productReference = CC6D8EC81B654099005682C0 /* Kulu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC6D8ED91B654099005682C0 /* kawaTests */ = {
+		CC6D8ED91B654099005682C0 /* kuluTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC6D8EE71B654099005682C0 /* Build configuration list for PBXNativeTarget "kawaTests" */;
+			buildConfigurationList = CC6D8EE71B654099005682C0 /* Build configuration list for PBXNativeTarget "kuluTests" */;
 			buildPhases = (
 				CC6D8ED61B654099005682C0 /* Sources */,
 				CC6D8ED71B654099005682C0 /* Frameworks */,
@@ -191,9 +191,9 @@
 			dependencies = (
 				CC6D8EDC1B654099005682C0 /* PBXTargetDependency */,
 			);
-			name = kawaTests;
-			productName = kawaTests;
-			productReference = CC6D8EDA1B654099005682C0 /* kawaTests.xctest */;
+			name = kuluTests;
+			productName = kuluTests;
+			productReference = CC6D8EDA1B654099005682C0 /* kuluTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CC6D8EC31B654099005682C0 /* Build configuration list for PBXProject "kawa" */;
+			buildConfigurationList = CC6D8EC31B654099005682C0 /* Build configuration list for PBXProject "kulu" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -227,8 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC6D8EC71B654099005682C0 /* kawa */,
-				CC6D8ED91B654099005682C0 /* kawaTests */,
+				CC6D8EC71B654099005682C0 /* kulu */,
+				CC6D8ED91B654099005682C0 /* kuluTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6D8EE11B654099005682C0 /* kawaTests.swift in Sources */,
+				CC6D8EE11B654099005682C0 /* kuluTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +284,7 @@
 /* Begin PBXTargetDependency section */
 		CC6D8EDC1B654099005682C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC6D8EC71B654099005682C0 /* kawa */;
+			target = CC6D8EC71B654099005682C0 /* kulu */;
 			targetProxy = CC6D8EDB1B654099005682C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -390,10 +390,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = kawa/Info.plist;
+				INFOPLIST_FILE = kulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = Kawa;
-				SWIFT_OBJC_BRIDGING_HEADER = kawa/BridgingHeader.h;
+				PRODUCT_NAME = Kulu;
+				SWIFT_OBJC_BRIDGING_HEADER = kulu/BridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -406,10 +406,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = kawa/Info.plist;
+				INFOPLIST_FILE = kulu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = Kawa;
-				SWIFT_OBJC_BRIDGING_HEADER = kawa/BridgingHeader.h;
+				PRODUCT_NAME = Kulu;
+				SWIFT_OBJC_BRIDGING_HEADER = kulu/BridgingHeader.h;
 			};
 			name = Release;
 		};
@@ -426,10 +426,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = kawaTests/Info.plist;
+				INFOPLIST_FILE = kuluTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kawa.app/Contents/MacOS/kawa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kulu.app/Contents/MacOS/kulu";
 			};
 			name = Debug;
 		};
@@ -442,17 +442,17 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = kawaTests/Info.plist;
+				INFOPLIST_FILE = kuluTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kawa.app/Contents/MacOS/kawa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kulu.app/Contents/MacOS/kulu";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC6D8EC31B654099005682C0 /* Build configuration list for PBXProject "kawa" */ = {
+		CC6D8EC31B654099005682C0 /* Build configuration list for PBXProject "kulu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC6D8EE21B654099005682C0 /* Debug */,
@@ -461,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC6D8EE41B654099005682C0 /* Build configuration list for PBXNativeTarget "kawa" */ = {
+		CC6D8EE41B654099005682C0 /* Build configuration list for PBXNativeTarget "kulu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC6D8EE51B654099005682C0 /* Debug */,
@@ -470,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC6D8EE71B654099005682C0 /* Build configuration list for PBXNativeTarget "kawaTests" */ = {
+		CC6D8EE71B654099005682C0 /* Build configuration list for PBXNativeTarget "kuluTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC6D8EE81B654099005682C0 /* Debug */,

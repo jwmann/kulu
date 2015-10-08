@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-xcodebuild -archivePath kawa -scheme kawa archive
+xcodebuild -archivePath kulu -scheme kulu archive
 
-rm -rf Kawa.app
-xcodebuild -exportArchive -exportFormat APP -archivePath kawa.xcarchive -exportPath Kawa
+rm -rf Kulu.app
+xcodebuild -exportArchive -exportFormat APP -archivePath kulu.xcarchive -exportPath Kulu

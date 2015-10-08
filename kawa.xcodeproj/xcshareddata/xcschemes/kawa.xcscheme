@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC6D8EC71B654099005682C0"
-               BuildableName = "Kawa.app"
-               BlueprintName = "kawa"
-               ReferencedContainer = "container:kawa.xcodeproj">
+               BuildableName = "Kulu.app"
+               BlueprintName = "kulu"
+               ReferencedContainer = "container:kulu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC6D8ED91B654099005682C0"
-               BuildableName = "kawaTests.xctest"
-               BlueprintName = "kawaTests"
-               ReferencedContainer = "container:kawa.xcodeproj">
+               BuildableName = "kuluTests.xctest"
+               BlueprintName = "kuluTests"
+               ReferencedContainer = "container:kulu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC6D8ED91B654099005682C0"
-               BuildableName = "kawaTests.xctest"
-               BlueprintName = "kawaTests"
-               ReferencedContainer = "container:kawa.xcodeproj">
+               BuildableName = "kuluTests.xctest"
+               BlueprintName = "kuluTests"
+               ReferencedContainer = "container:kulu.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC6D8EC71B654099005682C0"
-            BuildableName = "Kawa.app"
-            BlueprintName = "kawa"
-            ReferencedContainer = "container:kawa.xcodeproj">
+            BuildableName = "Kulu.app"
+            BlueprintName = "kulu"
+            ReferencedContainer = "container:kulu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC6D8EC71B654099005682C0"
-            BuildableName = "Kawa.app"
-            BlueprintName = "kawa"
-            ReferencedContainer = "container:kawa.xcodeproj">
+            BuildableName = "Kulu.app"
+            BlueprintName = "kulu"
+            ReferencedContainer = "container:kulu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC6D8EC71B654099005682C0"
-            BuildableName = "Kawa.app"
-            BlueprintName = "kawa"
-            ReferencedContainer = "container:kawa.xcodeproj">
+            BuildableName = "Kulu.app"
+            BlueprintName = "kulu"
+            ReferencedContainer = "container:kulu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

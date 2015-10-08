@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:kawa.xcodeproj">
+      location = "self:kulu.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,6 +1,6 @@
 //
 //  Settings.swift
-//  kawa
+//  kulu
 //
 //  Created by noraesae on 02/08/2015.
 //  Copyright (c) 2015 noraesae. All rights reserved.
