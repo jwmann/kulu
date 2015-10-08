@@ -16,10 +16,10 @@ to my speakers after the call was over.
 
 Initially I was using the [SoundSource](https://rogueamoeba.com/legacy/) app made by [RogueAmoeba](https://rogueamoeba.com/)
 to switch the output from a drop down menu in the top bar.
-Eventually, that became quite tedious to constantly grab my mouse, find the icon amidst all the others, click, find the output I want and then click again.
+Eventually, that became quite tedious by constantly having to grab my mouse, find the icon amidst all the others, click, find the output I want within the list and then click again.
 
-I decided to create an Applescript to handle this task. Essentially the Applescript was bound to a workflow, which was bound to a keybinding.
-This allowed me to press `Cmd + F12` to toggle between audio outputs. The only drawback was that the code executed slugglishly, sometimes taking up to 5 seconds to switch.
+I decided to create an Applescript to handle this task. Essentially the Applescript was bound to a workflow, which was bound to a key binding.
+This allowed me to press `Cmd + F12` to toggle between my audio outputs. The only drawback was that the code executed slugglishly, sometimes taking up to 5 seconds to switch.
 It also had trouble detecting the key binding for some reason.
 
 After a few months using the Applescript method, I discovered an app called [Kawa](https://github.com/noraesae/kawa). 
